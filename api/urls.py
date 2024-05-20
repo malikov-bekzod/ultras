@@ -1,5 +1,7 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
+
+from rest_framework.authtoken import views
 from .views import (
     UserViewSet,
     BlogViewSet,
@@ -21,4 +23,5 @@ router.register(prefix="orders", viewset=OrderViewSet, basename="orders")
 
 urlpatterns = [
     path("", include(router.urls)),
+    path("auth/gen-token/", views.obtain_auth_token),
 ]
