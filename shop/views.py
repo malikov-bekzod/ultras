@@ -95,3 +95,4 @@ class ProductDeleteView(View):
         product = get_object_or_404(Product, pk=id)
         product.delete()
         return redirect("shop")
+

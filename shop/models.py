@@ -102,6 +102,7 @@ class Product(models.Model):
     types = models.CharField(max_length=50, choices=ClothingType.choices,default=ClothingType.not_type)
     image = models.ImageField(upload_to="shop/product/")
     gender = models.CharField(max_length=10, choices=Gender.choices, default=Gender.not_gender)
+    viewed = models.PositiveIntegerField(default=0)
     created_date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
