@@ -24,30 +24,9 @@ body {
   flex-wrap: wrap;
 }
 
-.product-thumbnails {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-right: 20px;
-}
-
-.product-thumbnails img {
-  width: 100px;
-  height: auto;
-  cursor: pointer;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  transition: border 0.3s;
-}
-
-.product-thumbnails img:hover {
-  border-color: #e67e22;
-}
-
 .product-image {
   flex: 1;
   max-width: 800px;
-  position: relative;
 }
 
 .product-image img {
@@ -104,12 +83,42 @@ body {
   background-color: #d35400;
 }
 
-.product-tabs {
-  margin: 20px 0;
+.update-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.update-button:hover {
+  background-color: #2980b9;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.product-links {
+  margin: 10px 0;
   text-align: center;
 }
 
-.product-tabs a {
+.product-links a {
   font-size: 1.5em;
   color: #333;
   text-decoration: none;
@@ -118,13 +127,13 @@ body {
   transition: color 0.3s;
 }
 
-.product-tabs a:hover {
+.product-links a:hover {
   color: #e67e22;
 }
 
 .product-description,
-.product-reviews {
-  display: none;
+.product-reviews,
+.comment-form {
   margin: 20px 0;
 }
 
